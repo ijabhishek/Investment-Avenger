@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme used after the system splash screen has finished. -->
+    <style name="Theme.InvestmentAvenger" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/splash_bg</item>
+        <item name="android:colorBackground">@color/splash_bg</item>
+    </style>
+
+    <!-- Theme used while the system splash screen is showing: solid navy + the full logo (never white). -->
+    <style name="Theme.InvestmentAvenger.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_bg</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_icon</item>
+        <item name="postSplashScreenTheme">@style/Theme.InvestmentAvenger</item>
+    </style>
+</resources>
